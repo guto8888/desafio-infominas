@@ -1,0 +1,109 @@
+.content {
+    background-color: rgb(35, 35, 35);
+    color: white;
+    height: 95vh;
+    width: 90%;
+}
+
+.divModal {
+    display: flex;
+    justify-content: space-between;
+    height: 75%;
+    margin-bottom: 5%;
+}
+
+.image {
+    margin-bottom: 15%;
+    width: 100%;
+    height: 75%;
+}
+
+.details {
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.details:last-child {
+    flex-direction: row-reverse;
+}
+
+.details li {
+    list-style: none;
+}
+
+.modalTitle {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 300%;
+}
+
+.name {
+    text-align: center;
+}
+
+.winner {
+    text-align: center;
+}
+
+.winner span {
+    color: #00e676;
+}
+
+.draw {
+    text-align: center;
+}
+
+.draw span {
+    color: gray;
+}
+
+@media (max-width: 650px) {
+    .modalTitle {
+        font-size: 12px;
+    }
+
+    .details {
+        width: 50%;
+    }
+  }
+
+@media (max-width: 500px) {
+    .image {
+      width: 90px;
+      height: 70%;
+    }
+
+    .name {
+        font-size: 15px;
+    }
+
+    .details {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .details:last-child {
+        flex-direction: column;
+    }
+
+    .draw, .winner {
+        font-size: 15px;
+        margin: 5% 0;
+    }
+}
+
+@media (max-width: 280px) {
+    .image {
+      display: none;
+    }
+
+    .modalTitle {
+        font-size: 10px;
+    }
+}
