@@ -7,7 +7,7 @@ import style from './modal.module.css'
 import { CharModal, PropsModal, WinnerType } from "@/app/types/types";
 import { forwardRef, useEffect, useState } from 'react';
 
-const Backdrop = forwardRef<HTMLDivElement,{ open?: boolean; className: string }>((props, ref) => {
+const Backdrop = forwardRef<HTMLDivElement,{ open?: boolean; className: string }>(function backForward(props, ref) {
   const { open, className, ...other } = props;
   
   return (
